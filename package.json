@@ -1,0 +1,32 @@
+{
+  "name": "delloite-api",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start:dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/Infra/Server/Server.ts",
+    "start": "ts-node src/Infra/Server/Server.ts",
+    "test": "jest --watchAll",
+    "test:staged": "jest --passWithNoTests"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {},
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "husky": "^7.0.4",
+    "jest": "^27.4.7",
+    "lint-staged": "^12.2.2"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "swagger-autogen": "^2.18.8"
+  }
+}
