@@ -2,7 +2,8 @@ import express from 'express'
 import cors from 'cors'
 import dotenv from 'dotenv';
 import routes from '../Routes/Index'
-// import swaggerAutogen from 'swagger-autogen';
+import swaggerUi from 'swagger-ui-express'
+import swaggerFile from '../../Shared/Docs/swagger.json';
 
 dotenv.config();
 const PORT = process.env.PORT || 3000;
@@ -32,7 +33,7 @@ app.use(express.json({limit: '50mb'}));
 app.use(express.urlencoded({limit: "50mb", extended: true, parameterLimit: 50000}));
 app.use(routes);
 
-// app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerFile));
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerFile));
 
 app.listen(PORT, () => {
   console.log(`Server started on port ${PORT}!`)
