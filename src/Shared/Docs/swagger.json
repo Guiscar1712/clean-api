@@ -1,0 +1,108 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+      "title": "API para ambiente EME",
+      "description": "Essa api tem por objetivo servir o ambiente EME desde o processo de qualificação de leads, integração com BOT e produtos HM",
+      "version": "1.0.0"
+  },
+  "servers": [
+      {
+          "url": "https://eme-server.devhagens.com.br",
+          "description": "Homologação"
+      }
+  ],
+  "tags": [
+    {
+        "name": "Services",
+        "description": "Endpoint do módulo de serviços do site"
+    },
+    {
+        "name": "Posts",
+        "description": "Endpoints do módulo de posts do site"
+    },
+    {
+        "name": "Members",
+        "description": "Endpoints do módulo de usuários do site'"
+    }
+  ],
+  "paths": {
+    "/services": {
+            "post": {
+                "summary": "Geração de token para autenticação nas rotas",
+                "tags": [
+                    "Auth"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Token gerado com sucesso",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "token": {
+                                            "type": "string",
+                                            "example": "2E8183503259CD84E12B41A36..."
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    },
+    "/posts": {
+        "post": {
+            "summary": "Geração de token para autenticação nas rotas",
+            "tags": [
+                "Auth"
+            ],
+            "responses": {
+                "200": {
+                    "description": "Token gerado com sucesso",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "token": {
+                                        "type": "string",
+                                        "example": "2E8183503259CD84E12B41A36..."
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+},
+    "/members": {
+        "post": {
+            "summary": "Geração de token para autenticação nas rotas",
+            "tags": [
+                "Auth"
+            ],
+            "responses": {
+                "200": {
+                    "description": "Token gerado com sucesso",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "token": {
+                                        "type": "string",
+                                        "example": "2E8183503259CD84E12B41A36..."
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}
+  }
+}
