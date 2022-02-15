@@ -4,11 +4,16 @@ import dotenv from 'dotenv';
 import routes from '../Routes/Index'
 import swaggerUi from 'swagger-ui-express'
 import swaggerFile from '../../Shared/Docs/swagger.json';
+import Database from '../Data/Remote/Database';
 
 dotenv.config();
 const PORT = process.env.PORT || 3000;
  
 const app = express();
+
+const database = new Database()
+
+database.connect()
 
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');

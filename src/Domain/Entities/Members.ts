@@ -1,6 +1,7 @@
-import { Entity } from "./Entity";
+import Entity from "./Entity";
 
-class Member extends Entity {
+
+class Members extends Entity {
   name: string;
   email: string;
   password: string;

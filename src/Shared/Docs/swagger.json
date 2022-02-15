@@ -7,8 +7,8 @@
   },
   "servers": [
       {
-          "url": "https://eme-server.devhagens.com.br",
-          "description": "Homologação"
+          "url": "https://delloite-api.herokuapp.com",
+          "description": "Produção"
       }
   ],
   "tags": [

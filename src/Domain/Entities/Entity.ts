@@ -1,3 +1,5 @@
-export class Entity {
+class Entity {
   id?: number;
 }
+
+export default Entity

@@ -1,11 +1,12 @@
-class Services {
-  id: number;
+import Entity from "./Entity";
+
+class Services extends Entity {
   name: string;
   description: string;
   update_at: Date;
   created_at: Date;
-  constructor(id = null, name: string, description: string) {
-    this.id = id;
+  constructor(name: string, description: string) {
+    super()
     this.name = name;
     this.description = description;
     this.update_at = new Date();
