@@ -26,25 +26,126 @@
     }
   ],
   "paths": {
-    "/services": {
+    "/users": {
             "post": {
-                "summary": "Geração de token para autenticação nas rotas",
+                "summary": "Criação de serviços para o site institucional",
                 "tags": [
                     "Auth"
                 ],
                 "responses": {
                     "200": {
-                        "description": "Token gerado com sucesso",
+                        "description": "Serviço criado com sucesso",
                         "content": {
                             "application/json": {
                                 "schema": {
                                     "type": "object",
                                     "properties": {
-                                        "token": {
+                                        "id": {
+                                            "type": "number",
+                                            "example": 1
+                                        },
+                                        "name": {
+                                            "type": "string",
+                                            "example": "Guilherme Scaramella"
+                                        },
+                                        "email": {
+                                            "type": "string",
+                                            "example": "guiscar1712@gmail.com"
+                                        },
+                                        "password": {
                                             "type": "string",
                                             "example": "2E8183503259CD84E12B41A36..."
                                         }
                                     }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "Atualizar usuario do site institucional",
+                "tags": [
+                    "Auth"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Serviço criado com sucesso",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "id": {
+                                            "type": "number",
+                                            "example": 1
+                                        },
+                                        "name": {
+                                            "type": "string",
+                                            "example": "Guilherme Scaramella"
+                                        },
+                                        "email": {
+                                            "type": "string",
+                                            "example": "guiscar1712@gmail.com"
+                                        },
+                                        "password": {
+                                            "type": "string",
+                                            "example": "2E8183503259CD84E12B41A36..."
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "get": {
+                "summary": "Listar usuários",
+                "responses": {
+                    "200": {
+                        "description": "Busca realizada com sucesso!",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "properties": [
+                                        {
+                                            "id": {
+                                                "type": "number",
+                                                "example": 1
+                                            },
+                                            "name": {
+                                                "type": "string",
+                                                "example": "Guilherme Scaramella"
+                                            },
+                                            "email": {
+                                                "type": "string",
+                                                "example": "guiscar1712@gmail.com"
+                                            },
+                                            "password": {
+                                                "type": "string",
+                                                "example": "2E8183503259CD84E12B41A36..."
+                                            }
+                                        },
+                                        {
+                                            "id": {
+                                                "type": "number",
+                                                "example": 1
+                                            },
+                                            "name": {
+                                                "type": "string",
+                                                "example": "Guilherme Scaramella"
+                                            },
+                                            "email": {
+                                                "type": "string",
+                                                "example": "guiscar1712@gmail.com"
+                                            },
+                                            "password": {
+                                                "type": "string",
+                                                "example": "2E8183503259CD84E12B41A36..."
+                                            }
+                                        }
+                                    ]
                                 }
                             }
                         }
@@ -78,7 +179,7 @@
             }
         }
 },
-    "/members": {
+    "/services": {
         "post": {
             "summary": "Geração de token para autenticação nas rotas",
             "tags": [

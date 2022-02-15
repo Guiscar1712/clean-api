@@ -14,8 +14,6 @@ class Database {
         database: "d9fkh6u3tflc3m",
       }
     );
-    
-    console.log('connect database')
   }
 }
 
