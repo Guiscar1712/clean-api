@@ -1,10 +1,10 @@
 import express from 'express'
 import cors from 'cors'
 import dotenv from 'dotenv';
-import routes from '../Routes/Index'
+import routes from '../routes/index'
 import swaggerUi from 'swagger-ui-express'
-import swaggerFile from '../../Shared/Docs/swagger.json';
-import Database from '../Data/Remote/Database';
+import swaggerFile from '../../shared/docs/swagger.json';
+import Database from '../data/remote/database';
 
 dotenv.config();
 const PORT = process.env.PORT || 3000;

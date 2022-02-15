@@ -1,5 +1,5 @@
-import Posts from "../../../Domain/Entities/Posts";
-import Repository from "./Repository";
+import Posts from "../../../domain/entities/posts";
+import Repository from "./repository";
 
 abstract class PostsRepository extends Repository<Posts> {
   

@@ -1,8 +1,8 @@
 {
   "openapi": "3.0.0",
   "info": {
-      "title": "API para ambiente EME",
-      "description": "Essa api tem por objetivo servir o ambiente EME desde o processo de qualificação de leads, integração com BOT e produtos HM",
+      "title": "API Delloite",
+      "description": "Essa api tem por objetivo servir o ambiente de um site institucional, como caso de teste para a empresa Delloite",
       "version": "1.0.0"
   },
   "servers": [

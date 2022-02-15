@@ -1,4 +1,4 @@
-import Entity from "./Entity";
+import Entity from "./entity";
 
 class Services extends Entity {
   name: string;

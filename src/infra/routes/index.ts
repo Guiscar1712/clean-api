@@ -1,7 +1,7 @@
 import { Router } from 'express'
-import memberRouter from './MemberRoute'
-import postsRouter from './PostsRoute'
-import servicesRouter from './ServicesRoute'
+import memberRouter from './member.route'
+import postsRouter from './posts.route'
+import servicesRouter from './services.route'
 
 const routes = Router()
 

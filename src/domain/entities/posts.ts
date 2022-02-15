@@ -1,4 +1,4 @@
-import Entity from "./Entity";
+import Entity from "./entity";
 
 class Posts extends Entity {
   title: string;

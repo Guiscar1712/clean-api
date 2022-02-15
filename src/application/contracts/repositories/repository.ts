@@ -1,5 +1,5 @@
 import { Observable } from "rxjs";
-import { Entity } from '../../../Domain/Entities/Entity'
+import Entity from '../../../domain/entities/entity'
 
 abstract class Repository<TEntity extends Entity> {
     abstract create(data: TEntity): Observable<TEntity>;

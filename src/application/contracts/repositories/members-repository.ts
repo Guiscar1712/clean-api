@@ -1,5 +1,5 @@
-import Members from "../../../Domain/Entities/Members";
-import Repository from "./Repository";
+import Members from "../../../domain/entities/members";
+import Repository from "./repository";
 
 abstract class MemberRepository extends Repository<Members> {
   
